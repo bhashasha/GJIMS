@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScholarlyPress – Submit Paper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container nav-container">
+    <div class="logo">Scholarly<span>Press</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="journals.html">Journals</a>
+      <a href="submit.html" class="active">Submit Paper</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1>Submit Your Manuscript</h1>
+      <p>
+        Fill in the form below to submit your article. Our editorial team will
+        acknowledge receipt within 3–5 working days.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-layout">
+      <div class="form-card">
+        <h2>Manuscript Submission Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Author Name</label>
+            <input type="text" id="name" name="name" placeholder="Full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="affiliation">Institution / Affiliation</label>
+            <input type="text" id="affiliation" name="affiliation" placeholder="University / Organisation" required>
+          </div>
+
+          <div class="form-group">
+            <label for="journal">Select Journal</label>
+            <select id="journal" name="journal" required>
+              <option value="">-- Choose Journal --</option>
+              <option value="jls">Journal of Legal Studies (JLS)</option>
+              <option value="tsr">Technology & Society Review (TSR)</option>
+              <option value="jspg">Journal of Social Policy & Governance (JSPG)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="title">Article Title</label>
+            <input type="text" id="title" name="title" placeholder="Title of your manuscript" required>
+          </div>
+
+          <div class="form-group">
+            <label for="abstract">Abstract</label>
+            <textarea id="abstract" name="abstract" rows="5" placeholder="Provide a brief abstract (150–250 words)" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="keywords">Keywords</label>
+            <input type="text" id="keywords" name="keywords" placeholder="e.g. custodial violence, human rights, AI">
+          </div>
+
+          <div class="form-group">
+            <label for="file">Upload Manuscript (PDF / DOCX)</label>
+            <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="ethics" name="ethics" required>
+            <label for="ethics">
+              I confirm that this manuscript is original, not under consideration elsewhere,
+              and complies with ethical guidelines.
+            </label>
+          </div>
+
+          <button type="submit" class="btn primary full-width">Submit Manuscript</button>
+        </form>
+      </div>
+
+      <aside class="info-card">
+        <h2>Author Guidelines (Summary)</h2>
+        <ul>
+          <li>Word limit: 5,000–8,000 words (excluding references).</li>
+          <li>Use a recognised citation style (e.g., OSCOLA, APA, MLA).</li>
+          <li>Include an abstract and 4–6 keywords.</li>
+          <li>Ensure the file is anonymised for peer review.</li>
+          <li>Plagiarism must be below the journal’s accepted threshold.</li>
+        </ul>
+        <p class="meta">
+          For full guidelines, email:
+          <a href="mailto:submissions@scholarlypress.org">submissions@scholarlypress.org</a>
+        </p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <p>© 2025 ScholarlyPress. All rights reserved.</p>
+    <p><a href="mailto:editor@scholarlypress.org">editor@scholarlypress.org</a></p>
+  </div>
+</footer>
+</body>
+</html>
